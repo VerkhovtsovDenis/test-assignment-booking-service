@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Table 1",
+      "seats": 4,
+      "location": "зал у окна"
+    },
+    {
+      "id": 2,
+      "name": "Table 2",
+      "seats": 6,
+      "location": "терраса"
+    },
+    {
+      "id": 3,
+      "name": "Table 3",
+      "seats": 2,
+      "location": "барная стойка"
+    },
+    {
+      "id": 4,
+      "name": "VIP 1",
+      "seats": 8,
+      "location": "отдельная комната"
+    },
+    {
+      "id": 5,
+      "name": "VIP 2",
+      "seats": 10,
+      "location": "отдельная комната"
+    }
+  ]
