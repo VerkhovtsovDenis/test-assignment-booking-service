@@ -23,6 +23,7 @@
 4. location: str (например, "зал у окна", "терраса")
 
 
+
 **Reservation – бронь:**
 
 1. id: int
@@ -30,6 +31,7 @@
 3. table_id: int (FK на Table)
 4. reservation_time: datetime
 5. duration_minutes: int
+
 
 
 ### Методы API:  
@@ -44,6 +46,7 @@
 - GET /reservations/ — список всех броней
 - POST /reservations/ — создать новую бронь
 - DELETE /reservations/{id} — удалить бронь
+
 
 
 **Логика бронирования:**
