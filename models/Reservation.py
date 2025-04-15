@@ -3,8 +3,8 @@ from sqlalchemy import DateTime
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column
 from sqlalchemy.orm import relationship
-from Base import Base
-from Table import Table
+from .Base import Base
+from .Table import Table
 
 
 class Reservation(Base):
