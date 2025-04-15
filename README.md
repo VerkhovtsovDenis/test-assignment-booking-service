@@ -2,7 +2,9 @@
 
 ## О вакансии:
 Предлагаемая должность: Junior Python Developer;
+
 Компания: ООО «Хайталент»;
+
 Вилка: от 70 000 ₽ (мес/на руки).
 
 
@@ -14,28 +16,35 @@
 ### Функциональные требования
 #### Модели:
 **Table – столик в ресторане:**
-id: int
-name: str (например, "Table 1")
-seats: int (количество мест)
-location: str (например, "зал у окна", "терраса")
+
+1. id: int
+2. name: str (например, "Table 1")
+3. seats: int (количество мест)
+4. location: str (например, "зал у окна", "терраса")
+
 
 **Reservation – бронь:**
-id: int
-customer_name: str
-table_id: int (FK на Table)
-reservation_time: datetime
-duration_minutes: int
+
+1. id: int
+2. customer_name: str
+3. table_id: int (FK на Table)
+4. reservation_time: datetime
+5. duration_minutes: int
+
 
 ### Методы API:  
 **Столики:**
-GET /tables/ — список всех столиков
-POST /tables/ — создать новый столик
-DELETE /tables/{id} — удалить столик
+
+- GET /tables/ — список всех столиков
+- POST /tables/ — создать новый столик
+- DELETE /tables/{id} — удалить столик
+
 
 **Брони:**
-GET /reservations/ — список всех броней
-POST /reservations/ — создать новую бронь
-DELETE /reservations/{id} — удалить бронь
+- GET /reservations/ — список всех броней
+- POST /reservations/ — создать новую бронь
+- DELETE /reservations/{id} — удалить бронь
+
 
 **Логика бронирования:**
 - Нельзя создать бронь, если в указанный временной слот столик уже занят (пересечение по времени и table_id).
